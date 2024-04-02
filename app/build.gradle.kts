@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.sammygojs.jokesapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.sammygojs.jokesapp"
