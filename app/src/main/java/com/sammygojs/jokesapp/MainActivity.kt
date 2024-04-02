@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -81,8 +82,12 @@ class MainActivity : ComponentActivity() {
 //                        Joke1(jokeModel)
 //                        Joke1(jokeModel2)
 //                        Joke1(question = "what is the joke2", answer="this is the joke2")
-                        jokes.forEach() { joke ->
-                            Joke1(jokeModel = joke)
+                        LazyColumn() {
+//                            jokes.forEach() { joke ->
+                            items(jokes.size){index ->
+                                Joke1(jokeModel = jokes[index])
+//                            }
+                            }
                         }
                     }
 
