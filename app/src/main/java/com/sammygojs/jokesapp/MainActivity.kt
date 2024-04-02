@@ -31,21 +31,59 @@ class MainActivity : ComponentActivity() {
                 ) {
 //                    Greeting("Android")
                     Column {
-                        val jokeModel = JokeModel(
-                            id=1,
-                            question = "what is the joke",
-                            answer="this is the joke",
-                            answerIsVisible = false
+
+                        val jokes = arrayListOf<JokeModel>(
+                            JokeModel(
+                                id=1,
+                                question = "what is the joke",
+                                answer="this is the joke",
+                                answerIsVisible = false
+                            ),
+                            JokeModel(
+                                id=2,
+                                question = "what is the joke",
+                                answer="this is the joke",
+                                answerIsVisible = false
+                            ),
+                            JokeModel(
+                                id=3,
+                                question = "what is the joke",
+                                answer="this is the joke",
+                                answerIsVisible = false
+                            ),
+                            JokeModel(
+                                id=4,
+                                question = "what is the joke",
+                                answer="this is the joke",
+                                answerIsVisible = false
+                            ),
+                            JokeModel(
+                                id=5,
+                                question = "what is the joke",
+                                answer="this is the joke",
+                                answerIsVisible = false
+                            ),
+
                         )
-                        val jokeModel2 = JokeModel(
-                            id=1,
-                            question = "what is the joke",
-                            answer="this is the joke",
-                            answerIsVisible = false
-                        )
-                        Joke1(jokeModel)
-                        Joke1(jokeModel2)
+
+//                        val jokeModel = JokeModel(
+//                            id=1,
+//                            question = "what is the joke",
+//                            answer="this is the joke",
+//                            answerIsVisible = false
+//                        )
+//                        val jokeModel2 = JokeModel(
+//                            id=1,
+//                            question = "what is the joke",
+//                            answer="this is the joke",
+//                            answerIsVisible = false
+//                        )
+//                        Joke1(jokeModel)
+//                        Joke1(jokeModel2)
 //                        Joke1(question = "what is the joke2", answer="this is the joke2")
+                        jokes.forEach() { joke ->
+                            Joke1(jokeModel = joke)
+                        }
                     }
 
                 }
